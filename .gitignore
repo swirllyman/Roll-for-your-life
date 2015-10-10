@@ -1,8 +1,11 @@
 # Unity files
-Library
-ProjectSettings
-
-
+[Bb]uild/
+[Ll]ibrary/
+[Oo]bj/
+[Pp]rojectSettings/
+[Tt]emp/
+sysinfo.txt
+*.stackdump
 
 # Windows image file caches
 Thumbs.db
