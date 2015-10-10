@@ -39,50 +39,42 @@ public class Placement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(currentObject != null)
+		{
+			//Returns a ray going from camera through a screen point.
+			//Input.mousePosition gives us our current mouse position in pixel coordinates
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			
+			//This object will allow us to get information on the collider our ray hits.
+			RaycastHit hit;
 
-		//Returns a ray going from camera through a screen point.
-		//Input.mousePosition gives us our current mouse position in pixel coordinates
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			//This if statement will only execute if the raycast hits into something
+			if(Physics.Raycast (ray, out hit)){
 
-		//This object will allow us to get information on the collider our ray hits.
-		RaycastHit hit;
-
-		//This if statement will only execute if the raycast hits into something
-		if(Physics.Raycast (ray, out hit)){
-
-			//If our mouse is over a platform
-			if(hit.collider.tag == "Platform")
-			{
-				if(currentObject != null)
+				//If our mouse is over a platform
+				if(hit.collider.tag == "Platform")
 				{
-					if(Input.GetMouseButtonDown (1))
-					{
-						Destroy (currentObject);
-					}
-
 					if(!placed)
 						currentObject.transform.position = hit.point;
 
-					//Mouse Drag
-					if(Input.GetMouseButton (0)){
+					if(Input.GetMouseButtonDown(0)){
 						placed = true;
-
-						//This will make our current object face towards our hit point
-						currentObject.transform.LookAt(hit.point, transform.up);
+						currentObject.GetComponent<PlaceObject>().isPlaced = true;
 					}
 
 					if(Input.GetMouseButtonUp(0)){
-						//Change the material to a solid
-						currentObject.GetComponent<Renderer>().material = windmillMatSolid;
-
-						//Turn on the force in the child object
-						currentObject.transform.GetChild(0).gameObject.SetActive(true);
-
 						currentObject = null;
 						placed = false;
 
-						currentObject = (GameObject)Instantiate(windmill, new Vector3(-10000, 5000, 5000), Quaternion.identity);
+						//currentObject = (GameObject)Instantiate(windmill, new Vector3(-10000, 5000, 5000), Quaternion.identity);
 					}
+				}
+			}
+			else
+			{
+				if(Input.GetMouseButtonDown (0))
+				{
+					Destroy(currentObject);
 				}
 			}
 		}
