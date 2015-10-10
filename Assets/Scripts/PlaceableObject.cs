@@ -7,7 +7,7 @@ public class PlaceableObject : MonoBehaviour {
 
 	public Material solidMat;
 
-	public PlaceableObjectType currentObject;
+	public PlaceableObjectType currentObjectType;
 
 	public bool isPlaced = false;
 	public bool finished = false;
@@ -32,7 +32,7 @@ public class PlaceableObject : MonoBehaviour {
 			//If our mouse is over a platform
 			if(hit.collider.tag == "Platform"){
 
-				if(currentObject == PlaceableObjectType.windmill){
+				if(currentObjectType == PlaceableObjectType.windmill){
 					if(Input.GetMouseButton(0) &! finished){
 						transform.LookAt (hit.point, transform.up);
 					}
@@ -48,12 +48,6 @@ public class PlaceableObject : MonoBehaviour {
 
 					}
 
-				}
-
-				if(currentObject == PlaceableObjectType.missle){
-					if(Input.GetMouseButtonDown(0)){
-
-					}
 				}
 			}
 			else if(hit.collider.gameObject == gameObject){

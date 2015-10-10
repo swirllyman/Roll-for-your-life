@@ -65,8 +65,6 @@ public class Placement : MonoBehaviour {
 					if(Input.GetMouseButtonUp(0)){
 						currentObject = null;
 						placed = false;
-
-						//currentObject = (GameObject)Instantiate(windmill, new Vector3(-10000, 5000, 5000), Quaternion.identity);
 					}
 				}
 			}
