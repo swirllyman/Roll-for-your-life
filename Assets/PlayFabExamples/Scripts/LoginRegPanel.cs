@@ -71,7 +71,7 @@ public class LoginRegPanel : MonoBehaviour
 
         GetDataFromPlayFab(() =>
         {
-            WindowManager.SendEvent("Store");
+            Application.LoadLevel("Main Menu");
         });
     }
 
