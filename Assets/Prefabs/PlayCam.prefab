@@ -13,7 +13,7 @@ GameObject:
   - 92: {fileID: 9287346}
   - 81: {fileID: 8165538}
   - 45: {fileID: 4534950}
-  - 114: {fileID: 11407024}
+  - 114: {fileID: 11467168}
   m_Layer: 0
   m_Name: PlayCam
   m_TagString: MainCamera
@@ -89,7 +89,7 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199932}
   m_Enabled: 1
---- !u!114 &11407024
+--- !u!114 &11467168
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
