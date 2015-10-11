@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Placement : MonoBehaviour {
@@ -16,8 +16,8 @@ public class Placement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(currentObject != null)
-		{
+		Rect screenRect = new Rect(0, 0, Screen.width, Screen.height);
+		if(screenRect.Contains(Input.mousePosition) && currentObject != null){
 			//Returns a ray going from camera through a screen point.
 			//Input.mousePosition gives us our current mouse position in pixel coordinates
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -40,16 +40,10 @@ public class Placement : MonoBehaviour {
 					}
 
 					if(Input.GetMouseButtonUp(0)){
+						GameState.Instance.windmillAmount++;
 						currentObject = null;
 						placed = false;
 					}
-				}
-			}
-			else
-			{
-				if(Input.GetMouseButtonDown (0))
-				{
-					Destroy(currentObject);
 				}
 			}
 		}

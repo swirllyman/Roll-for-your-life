@@ -52,6 +52,8 @@ public class PlaceableObject : MonoBehaviour {
 			}
 			else if(hit.collider.gameObject == gameObject){
 				if(Input.GetMouseButtonDown(0)){
+					if(GameState.Instance.windmillAmount > 0)
+						GameState.Instance.windmillAmount--;
 					Destroy (hit.collider.gameObject);
 				}
 			}

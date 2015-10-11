@@ -1,20 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Finish : MonoBehaviour {
+public class Master : MonoBehaviour {
+
+	//Level number, highest score
+	public static int[,] scores = new int[35, 2];
+
 	// Use this for initialization
 	void Start () {
+		DontDestroyOnLoad(this);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
-
-	void OnTriggerEnter(Collider c){
-		if(c.tag == "Player"){
-			GameState.Instance.victory = true;
-		}
-	}
-
 }
