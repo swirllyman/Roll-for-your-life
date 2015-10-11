@@ -15,13 +15,16 @@ public class UIManager : MonoBehaviour {
 	
 	}
 
-	public void SetWindMill()
-	{
+	public void SetWindMill() {
 		PlaceableObject p = (PlaceableObject)Instantiate (windMill, new Vector3 (1000, 1000, 1000), transform.rotation);
 		GetComponent<Placement>().currentObject = p;
 	}
 
 	public void StartButtonClicked() {
 		GameManager.StartGame ();
+	}
+
+	public void ResetButtonClicked() {
+		GameManager.RestartLevel ();
 	}
 }

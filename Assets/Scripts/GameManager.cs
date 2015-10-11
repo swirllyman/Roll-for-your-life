@@ -24,7 +24,8 @@ public class GameManager : MonoBehaviour {
 		GameManager.Active = true;
 	}
 
-	public void EndGame() {
+	public static void RestartLevel() {
 		GameManager.Active = false;
+		Application.LoadLevel (Application.loadedLevel);
 	}
 }
