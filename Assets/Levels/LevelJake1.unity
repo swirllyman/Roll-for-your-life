@@ -1649,14 +1649,6 @@ Prefab:
       propertyPath: m_Name
       value: SpeedPlate (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 419994, guid: b95d114dd0232fe40a5496bbc6939157, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.07008934
-      objectReference: {fileID: 0}
-    - target: {fileID: 419994, guid: b95d114dd0232fe40a5496bbc6939157, type: 2}
-      propertyPath: m_LocalScale.z
-      value: .144695371
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b95d114dd0232fe40a5496bbc6939157, type: 2}
   m_IsPrefabParent: 0
@@ -2249,9 +2241,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e2e12c5d8912e4959af725f7095b84dc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 495931f86ac7c1540bd633c8fd6fb314, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .532000005
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2739,6 +2731,10 @@ Prefab:
     - target: {fileID: 419994, guid: b95d114dd0232fe40a5496bbc6939157, type: 2}
       propertyPath: m_LocalScale.z
       value: .191598773
+      objectReference: {fileID: 0}
+    - target: {fileID: 11447420, guid: b95d114dd0232fe40a5496bbc6939157, type: 2}
+      propertyPath: pushAmount
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b95d114dd0232fe40a5496bbc6939157, type: 2}
