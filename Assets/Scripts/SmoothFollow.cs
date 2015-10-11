@@ -4,7 +4,9 @@ namespace UnityStandardAssets.Utility
 {
 	public class SmoothFollow : MonoBehaviour
 	{
+		public Rigidbody body;
 
+		public float damping;
 		// The target we are following
 		[SerializeField]
 		private Transform target;
@@ -19,6 +21,11 @@ namespace UnityStandardAssets.Utility
 		private float rotationDamping;
 		[SerializeField]
 		private float heightDamping;
+
+		private float currentDistance = 0;
+
+		private Quaternion targetRotation;
+		private Vector3 lastDirection;
 
 		// Use this for initialization
 		void Start() { }
@@ -53,9 +60,12 @@ namespace UnityStandardAssets.Utility
 
 			// Set the height of the camera
 			transform.position = new Vector3(transform.position.x ,currentHeight , transform.position.z);
+			currentDistance = distance;
+			targetRotation = Quaternion.LookRotation(body.velocity.normalized, Vector3.up);
+			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * damping);
 
 			// Always look at the target
-			transform.LookAt(target);
+			transform.LookAt(target.position);
 		}
 	}
 }

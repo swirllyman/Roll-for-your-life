@@ -3,11 +3,17 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
+	public static Camera setupCam;
+	public static Camera playCam;
+
 	// indicates if the ball is rolling
 	public static bool Active = false;
 
 	// Use this for initialization
 	IEnumerator Start () {
+		setupCam = GameObject.Find ("Main Camera").GetComponent<Camera>();
+		playCam = GameObject.Find ("PlayCam").GetComponent<Camera>();
+		playCam.enabled = false;
 		GameManager.Active = false;
 
 		AsyncOperation async = Application.LoadLevelAdditiveAsync("UI_Scene");
@@ -22,6 +28,8 @@ public class GameManager : MonoBehaviour {
 
 	public static void StartGame() {
 		GameManager.Active = true;
+		playCam.enabled = true;
+		setupCam.enabled = false;
 	}
 
 	public static void RestartLevel() {
