@@ -1719,6 +1719,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: songs.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 353630b9bbeaf1045bdf110e731d6683, type: 3}
@@ -1726,6 +1730,46 @@ Prefab:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d50a46249867e144ac6c40cbb0150db, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b86a68a4680d40942b82df08f7ae6107, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a2fb60980e8f4ae47bef0b9ddc5d8052, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 32184607f092c62408dcb8809664b7fd, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 292cf05c2c56b4343ad01421eb6f54e9, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3148dc92e97e1e84d81c88de3984cb48, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c1c9c4601399d94481424cb68820105, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: d365bf61516571d4c8f6237ff518f115, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a6004d290545254ca9ce12266d749e8, type: 3}
+    - target: {fileID: 0}
+      propertyPath: songs.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: af35986fa6aab384a91335cbe4f706cc, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 176150}
