@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour {
 			this.player = (GameObject)Instantiate(Resources.Load ("BubbleBoy"));
 			Rigidbody playerBody = player.GetComponent<Rigidbody> ();
 			playerBody.position = spawnPointTransform.position;
+			playerBody.velocity = Vector3.zero;
 
 			CamFollow follow = playCam.GetComponentInParent<CamFollow> ();
 			follow.target = this.player.transform;
