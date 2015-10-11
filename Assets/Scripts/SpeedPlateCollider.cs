@@ -18,5 +18,5 @@ public class SpeedPlateCollider : MonoBehaviour {
 	
 	}
 
-	private const float pushAmount = 10000;
+	private const float pushAmount = 1000;
 }
