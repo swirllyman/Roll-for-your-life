@@ -263,7 +263,7 @@ MonoBehaviour:
   windmillAmount: 0
   zombieTakedowns: 0
   timer: 130
-  levelNum: 10
+  levelNum: 5
   score: 0
   victory: 0
   failure: 0

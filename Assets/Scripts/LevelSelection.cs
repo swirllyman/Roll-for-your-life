@@ -22,4 +22,10 @@ public class LevelSelection : MonoBehaviour {
 	{
 		Application.LoadLevel (levelName);
 	}
+
+
+	public void QuitLevel()
+	{
+		Application.Quit ();
+	}
 }
