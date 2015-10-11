@@ -18,6 +18,13 @@ public class Zombie : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		RaycastHit hit;
+		if(Physics.Raycast(transform.position, transform.forward, out hit, 1)){
+			if(hit.collider.tag == "Wall" || hit.collider.tag == "Platform"){
+				transform.Rotate (0, 180, 0);
+			}
+		}
 		choiceTimer -= Time.deltaTime;
 
 		if(choiceTimer <= 0.0f){
@@ -30,6 +37,7 @@ public class Zombie : MonoBehaviour {
 			}
 			else
 			{
+				transform.Rotate (0, Random.Range (0, 360), 0);
 				chillin = false;
 				speed = .02f;
 			}
@@ -48,4 +56,12 @@ public class Zombie : MonoBehaviour {
 			anim.CrossFade("walk03");
 		}
 	}
+
+//	void OnTriggerEnter(Collider c){
+//		if(c.tag == "Wall")
+//		{
+//			transform.Rotate(0, 180, 0);
+//			choiceTimer = maxChoiceTimer;
+//		}
+//	}
 }
