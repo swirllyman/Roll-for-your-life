@@ -17,7 +17,7 @@ public class Force : MonoBehaviour {
 
 	void OnTriggerStay(Collider c)
 	{
-		if(c.tag == "Player"){
+		if (GameManager.Active && c.tag == "Player") {
 			var dist = Vector3.Distance(c.gameObject.transform.position, this.transform.parent.position);
 			c.attachedRigidbody.AddForce(transform.forward * pushAmount/Mathf.Pow(dist, 2));
 		}
