@@ -7,6 +7,7 @@ public class Zombie : MonoBehaviour {
 	public float choiceTimer;
 	Animation anim;
 	bool dead, dying;
+	public bool stayIdle = false;
 
 	float speed = .02f;
 
@@ -23,53 +24,57 @@ public class Zombie : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if(transform.up != Vector3.up)
+		if(stayIdle){
+			anim.Play("idle02");
+		}
+		else
 		{
-			transform.up = Vector3.up;
-		}
-
-		if(dying){
-			anim.Play("death03");
-		}
-		else if(dead)
-		{
-			anim.Play ("dead");
-		}
-		else{
-			RaycastHit hit;
-			if(Physics.Raycast(new Vector3 (transform.position.x, transform.position.y + .1f, transform.position.z), transform.forward, out hit, 1)){
-				transform.Rotate (0, 180, 0);
+			if(transform.up != Vector3.up)
+			{
+				transform.up = Vector3.up;
 			}
-			choiceTimer -= Time.deltaTime;
 
-			if(choiceTimer <= 0.0f){
-				choiceTimer = Random.Range (maxChoiceTimer, maxChoiceTimer*2);
-				if(Random.value < .66f)
-				{
-					transform.Rotate (0, Random.Range (0, 360), 0);
-					chillin = true;
-					speed = 0;
+			if(dying){
+				anim.Play("death03");
+			}
+			else if(dead)
+			{
+				anim.Play ("dead");
+			}
+			else{
+				RaycastHit hit;
+				if(Physics.Raycast(new Vector3 (transform.position.x, transform.position.y + .1f, transform.position.z), transform.forward, out hit, 1)){
+					transform.Rotate (0, 180, 0);
+				}
+				choiceTimer -= Time.deltaTime;
+
+				if(choiceTimer <= 0.0f){
+					choiceTimer = Random.Range (maxChoiceTimer, maxChoiceTimer*2);
+					if(Random.value < .66f)
+					{
+						transform.Rotate (0, Random.Range (0, 360), 0);
+						chillin = true;
+						speed = 0;
+					}
+					else
+					{
+						transform.Rotate (0, Random.Range (0, 360), 0);
+						chillin = false;
+						speed = .02f;
+					}
+				}
+
+				if(!chillin){
+					transform.Translate(Vector3.forward * speed);
+				}
+
+				if(chillin){
+					anim.CrossFade("idle02");
 				}
 				else
 				{
-					transform.Rotate (0, Random.Range (0, 360), 0);
-					chillin = false;
-					speed = .02f;
+					anim.CrossFade("walk03");
 				}
-			}
-
-			if(!chillin){
-				transform.Translate(Vector3.forward * speed);
-			}
-
-
-			if(chillin){
-				anim.CrossFade("idle02");
-			}
-			else
-			{
-				anim.CrossFade("walk03");
 			}
 		}
 	}

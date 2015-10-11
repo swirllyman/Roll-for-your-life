@@ -2,8 +2,11 @@
 using System.Collections;
 
 public class Finish : MonoBehaviour {
+
+	private bool won;
 	// Use this for initialization
 	void Start () {
+		won = false;
 	}
 	
 	// Update is called once per frame
@@ -12,7 +15,8 @@ public class Finish : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider c){
-		if(c.tag == "Player"){
+		if(c.tag == "Player" &! won){
+			won = true;
 			GameState.Instance.victory = true;
 			this.PlaySound();
 		}

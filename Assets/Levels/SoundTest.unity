@@ -205,6 +205,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11465976, guid: 8fa616619ccadfb45ae531eb738d4948, type: 2}
+      propertyPath: body
+      value: 
+      objectReference: {fileID: 1139154101}
+    - target: {fileID: 11465976, guid: 8fa616619ccadfb45ae531eb738d4948, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1139154105}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8fa616619ccadfb45ae531eb738d4948, type: 2}
   m_IsPrefabParent: 0
@@ -259,24 +267,6 @@ Rigidbody:
 Transform:
   m_PrefabParentObject: {fileID: 474456, guid: 7afbc66e501261b40b2484f2e6686879, type: 2}
   m_PrefabInternal: {fileID: 1529234324}
---- !u!1 &1251479485 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 199932, guid: 8fa616619ccadfb45ae531eb738d4948, type: 2}
-  m_PrefabInternal: {fileID: 360917582}
---- !u!114 &1251479486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1251479485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 611102bd54e71174c86083662d784cb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  body: {fileID: 1139154101}
-  damping: .800000012
-  target: {fileID: 1139154105}
 --- !u!1001 &1529234324
 Prefab:
   m_ObjectHideFlags: 0
@@ -622,11 +612,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 453082, guid: 205eb3c9445bf204c8dbde65daf61e2c, type: 2}
       propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 119350, guid: 205eb3c9445bf204c8dbde65daf61e2c, type: 2}
-      propertyPath: m_TagString
-      value: MainCamera
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 205eb3c9445bf204c8dbde65daf61e2c, type: 2}

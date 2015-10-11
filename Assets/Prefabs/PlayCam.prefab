@@ -12,21 +12,23 @@ GameObject:
   - 124: {fileID: 12446062}
   - 92: {fileID: 9287346}
   - 81: {fileID: 8165538}
+  - 45: {fileID: 4534950}
+  - 114: {fileID: 11407024}
   m_Layer: 0
   m_Name: PlayCam
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &427698
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199932}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.31273365, y: 3.14160728, z: -.719930291}
+  m_LocalRotation: {x: .0811494961, y: .69688642, z: -.0824195668, w: .707793176}
+  m_LocalPosition: {x: -18.5, y: 6.5935626, z: -.899999976}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,6 +67,14 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
   m_StereoMirrorMode: 0
+--- !u!45 &4534950
+Skybox:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199932}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: ff330f6226d1d44838ee63a8824f8def, type: 2}
 --- !u!81 &8165538
 AudioListener:
   m_ObjectHideFlags: 1
@@ -79,6 +89,20 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199932}
   m_Enabled: 1
+--- !u!114 &11407024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199932}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611102bd54e71174c86083662d784cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  damping: .850000024
+  target: {fileID: 0}
 --- !u!124 &12446062
 Behaviour:
   m_ObjectHideFlags: 1
