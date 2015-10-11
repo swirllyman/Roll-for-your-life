@@ -14,7 +14,13 @@ public class Finish : MonoBehaviour {
 	void OnTriggerEnter(Collider c){
 		if(c.tag == "Player"){
 			GameState.Instance.victory = true;
+			this.PlaySound();
 		}
+	}
+
+	void PlaySound()
+	{
+		GetComponent<AudioSource>().Play();
 	}
 
 }

@@ -83,10 +83,14 @@ public class Zombie : MonoBehaviour {
 				dying = true;
 				transform.position = new Vector3(transform.position.x, transform.position.y+.05f, transform.position.z);
 				StartCoroutine(DeathTimer(anim["death03"].length));
-
-				GetComponent<AudioSource>().Play();
+				this.PlaySound();
 			}
 		}
+	}
+
+	void PlaySound()
+	{
+		GetComponent<AudioSource>().Play();
 	}
 
 	IEnumerator DeathTimer(float timer)
