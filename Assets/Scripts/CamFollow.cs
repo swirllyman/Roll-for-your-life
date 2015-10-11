@@ -27,7 +27,7 @@ public class CamFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		height = target.position.y + 7;
+		height = target.position.y + 6;
 		transform.position = target.position;
 		targetRotation = Quaternion.LookRotation(body.velocity.normalized, Vector3.up);
 		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * damping);

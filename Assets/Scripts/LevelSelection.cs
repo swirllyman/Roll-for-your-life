@@ -18,8 +18,8 @@ public class LevelSelection : MonoBehaviour {
 	
 	}
 
-	public void StartLevel(int num)
+	public void StartLevel(string levelName)
 	{
-		Application.LoadLevel ("Level " + num.ToString());
+		Application.LoadLevel (levelName);
 	}
 }
