@@ -122,6 +122,7 @@ ModelImporter:
     7400024: death03
     7400026: creep up
     7400028: damege
+    7400030: dead
     9500000: //RootNode
     11100000: //RootNode
     13700000: body
@@ -534,6 +535,134 @@ ModelImporter:
       curves: []
       events: []
       transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: dead
+      takeName: Default Take
+      firstFrame: 634.900024
+      lastFrame: 635
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/master
+        weight: 1
+      - path: Armature/master/Bone
+        weight: 1
+      - path: Armature/master/Bone/body1
+        weight: 1
+      - path: Armature/master/Bone/body1/neck
+        weight: 1
+      - path: Armature/master/Bone/body1/neck/head
+        weight: 1
+      - path: Armature/master/Bone/body1/neck/head/chin
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_004
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_004/Bone_001_L_005
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_004/Bone_001_L_005/Bone_001_L_006
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_007
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_007/Bone_001_L_008
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_007/Bone_001_L_008/Bone_001_L_009
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_010
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_L/arm_L/arm2_L/hand_L/Bone_001_L_010/Bone_001_L_011
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_004
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_004/Bone_001_R_005
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_004/Bone_001_R_005/Bone_001_R_006
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_007
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_007/Bone_001_R_008
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_007/Bone_001_R_008/Bone_001_R_009
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_010
+        weight: 1
+      - path: Armature/master/Bone/body1/shoulder_R/arm_R/arm2_R/hand_R/Bone_001_R_010/Bone_001_R_011
+        weight: 1
+      - path: Armature/master/Bone/body2
+        weight: 1
+      - path: Armature/master/Bone/body2/leg1_L
+        weight: 1
+      - path: Armature/master/Bone/body2/leg1_L/leg2_L
+        weight: 1
+      - path: Armature/master/Bone/body2/leg1_L/leg2_L/leg3_L
+        weight: 1
+      - path: Armature/master/Bone/body2/leg1_R
+        weight: 1
+      - path: Armature/master/Bone/body2/leg1_R/leg2_R
+        weight: 1
+      - path: Armature/master/Bone/body2/leg1_R/leg2_R/leg3_R
+        weight: 1
+      - path: Armature/master/Bone_002_L_003
+        weight: 1
+      - path: Armature/master/Bone_002_L_003/Bone_002_L_004
+        weight: 1
+      - path: Armature/master/Bone_002_R_003
+        weight: 1
+      - path: Armature/master/Bone_002_R_003/Bone_002_R_004
+        weight: 1
+      - path: Armature/master/Bone_010
+        weight: 1
+      - path: Armature/master/Bone_011
+        weight: 1
+      - path: Armature/master/fin2_L
+        weight: 1
+      - path: Armature/master/fin2_R
+        weight: 1
+      - path: Armature/master/fin_L
+        weight: 1
+      - path: Armature/master/fin_R
+        weight: 1
+      - path: body
+        weight: 1
+      - path: eye
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
     isReadable: 1

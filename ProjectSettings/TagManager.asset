@@ -7,6 +7,7 @@ TagManager:
   - Platform
   - Windmill
   - Wall
+  - Master
   layers:
   - Default
   - TransparentFX

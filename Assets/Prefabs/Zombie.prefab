@@ -1119,7 +1119,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.35591316, y: .129999995, z: .239999995}
+  m_LocalPosition: {x: 6.35591316, y: .116999999, z: .239999995}
   m_LocalScale: {x: 1.63822496, y: 1.63822412, z: 1.63822412}
   m_Children:
   - {fileID: 488614}
@@ -1440,14 +1440,14 @@ Animation:
   m_GameObject: {fileID: 176150}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400014, guid: cdd9a8a49378b5d43b3ad16db56e8998, type: 3}
+  m_Animation: {fileID: 0}
   m_Animations:
   - {fileID: 7400014, guid: cdd9a8a49378b5d43b3ad16db56e8998, type: 3}
   - {fileID: 7400008, guid: cdd9a8a49378b5d43b3ad16db56e8998, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7400024, guid: cdd9a8a49378b5d43b3ad16db56e8998, type: 3}
+  - {fileID: 7400030, guid: cdd9a8a49378b5d43b3ad16db56e8998, type: 3}
   m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &11405200
@@ -1470,12 +1470,12 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176150}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: .300000012
   m_Height: .550000012
   m_Direction: 1
-  m_Center: {x: 0, y: .270000011, z: 0}
+  m_Center: {x: 0, y: .310000002, z: 0}
 --- !u!137 &13709208
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
