@@ -9,6 +9,12 @@ sysinfo.txt
 *.stackdump
 [Pp]rojectSettings/[Pp]rojectVersion.txt
 
+# Unity3D generated meta files
+*.pidb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
