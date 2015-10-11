@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 027044500f14fb1478f0662509087922
 timeCreated: 1444589054
+=======
+guid: 23771038278344e42af32c9d92ff4939
+timeCreated: 1444590748
+>>>>>>> Stashed changes
 licenseType: Free
 AudioImporter:
   serializedVersion: 6
