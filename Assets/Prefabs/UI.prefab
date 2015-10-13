@@ -47,7 +47,7 @@ GameObject:
   - 114: {fileID: 11499678}
   - 114: {fileID: 11444770}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Level Select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1011,10 +1011,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 22465032}
+  m_Children: []
   m_Father: {fileID: 22485320}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: 138}
@@ -1033,11 +1032,11 @@ RectTransform:
   - {fileID: 22447926}
   m_Father: {fileID: 22485320}
   m_RootOrder: 3
-  m_AnchorMin: {x: .5, y: 1}
-  m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 200, y: -1.29999995}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -8.69999981, y: -1.29999995}
   m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: .5, y: 1}
+  m_Pivot: {x: 1, y: 1}
 --- !u!224 &22447926
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1066,13 +1065,13 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22400756}
-  m_Father: {fileID: 22428634}
-  m_RootOrder: 0
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: -91}
+  m_Father: {fileID: 22485320}
+  m_RootOrder: 4
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -21, y: 26}
   m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!224 &22470330
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1106,7 +1105,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: -170, y: -3.4000001}
+  m_AnchoredPosition: {x: -120.199997, y: -3.4000001}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: 1}
 --- !u!224 &22485320
@@ -1123,6 +1122,7 @@ RectTransform:
   - {fileID: 22482636}
   - {fileID: 22496008}
   - {fileID: 22432394}
+  - {fileID: 22465032}
   - {fileID: 22428634}
   m_Father: {fileID: 460298}
   m_RootOrder: 0
@@ -1163,7 +1163,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 13.3999996, y: -3.29999995}
+  m_AnchoredPosition: {x: 122.699997, y: -3.29999995}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: 1}
 --- !u!1001 &100100000

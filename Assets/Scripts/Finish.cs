@@ -23,8 +23,8 @@ public class Finish : MonoBehaviour {
 	}
 
 	void PlaySound()
-	{
-		GetComponent<AudioSource>().Play();
+	{	//Let's not play it and just say we did.
+		//GetComponent<AudioSource>().Play();
 	}
 
 }
