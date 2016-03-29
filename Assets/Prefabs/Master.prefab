@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c582ee5976733d4898bb6300a8bee61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 138294, guid: 75a9c30f85fc0564397212b0d633f286, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -50,6 +51,10 @@ Prefab:
       propertyPath: m_TagString
       value: Master
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 138294, guid: 75a9c30f85fc0564397212b0d633f286, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185438}
